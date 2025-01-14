@@ -4,7 +4,7 @@ import { useDateStyles } from './date.styles';
 import { useDate } from './use-date';
 
 export const Date: FC<DateProps> = (props) => {
-  const { id, label, onChange, value } = useDate(props);
+  const { id, label, onChange, value, minDate } = useDate(props);
   const styles = useDateStyles();
 
   return (
@@ -18,6 +18,7 @@ export const Date: FC<DateProps> = (props) => {
       <input
         id={id}
         type='datetime-local'
+        min={minDate}
         className={styles.input}
         value={value}
         onChange={onChange}

@@ -32,6 +32,7 @@ class TryCatchComponent extends Component<TryCatchProps, TryCatchState> {
                   novamente clicando abaixo e prometemos que iremos tentar de
                   tudo ✊
                 </p>
+                <small>{JSON.stringify(this.state.error)}</small>
               </div>
               <Button
                 label='recarregar'

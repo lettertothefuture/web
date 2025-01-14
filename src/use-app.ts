@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useCallback, useEffect, useState } from 'react';
 import { addDays, format } from 'date-fns';
 import { useSendLetter } from './hooks/use-send-letter';
@@ -39,7 +40,7 @@ export const useApp = () => {
 
   useEffect(() => {
     if (isError) {
-      throw error;
+      throw new Error(error as any);
     }
 
     if (isSuccess) {

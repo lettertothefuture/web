@@ -9,5 +9,6 @@ export interface DateProps {
 export interface UseDateResult extends Omit<DateProps, 'onChange' | 'value'> {
   id: string;
   value: string;
+  minDate: string;
   onChange?: (event: FormEvent<HTMLInputElement>) => void;
 }
