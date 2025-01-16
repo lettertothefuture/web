@@ -30,6 +30,6 @@ export const useDate = (props: DateProps): UseDateResult => {
     ...props,
     onChange,
     minDate,
-    value: date.toISOString().slice(0, 16),
+    value: date!.toISOString().slice(0, 16),
   };
 };
