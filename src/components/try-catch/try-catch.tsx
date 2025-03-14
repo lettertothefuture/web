@@ -26,16 +26,14 @@ class TryCatchComponent extends Component<TryCatchProps, TryCatchState> {
           <Paper>
             <div className={this.props.style.container}>
               <div>
-                <h1 className={this.props.style.title}>Essa não =( </h1>
+                <h1 className={this.props.style.title}>Ops =(</h1>
                 <p className={this.props.style.information}>
-                  Aconteceu algo que não esperavamos, entretanto pode tentar
-                  novamente clicando abaixo e prometemos que iremos tentar de
-                  tudo ✊
+                  It didn't go in the way as expected
                 </p>
                 <small>{JSON.stringify(this.state.error)}</small>
               </div>
               <Button
-                label='recarregar'
+                label='refresh'
                 disabled={false}
                 onClick={() => {
                   location.reload();

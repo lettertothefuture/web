@@ -45,25 +45,25 @@ export const App: FC = () => {
         <Title onChange={onTitleChange}>{title}</Title>
         <Body onChange={onLetterChange}>{letter}</Body>
         <Date
-          label='São Paulo, '
+          label='New York, '
           value={date}
           onChange={onDateChange}
         />
         <Signature onChange={onSignatureWrote} />
-        <Bookmark onClick={onClickSend}>Postar</Bookmark>
+        <Bookmark onClick={onClickSend}>Send</Bookmark>
       </Paper>
       <Modal
         opened={send}
-        title='Enviar carta'
+        title='Send'
         onClose={onCloseSend}
       >
         <EmailInput
-          label='Para quem ?'
+          label='For ?'
           value={email}
           onChange={onEmailChange}
         />
         <Button
-          label={`Enviar em: ${dateFormated}`}
+          label={`at: ${dateFormated}`}
           disabled={sendDisabled}
           onClick={onSend}
         />

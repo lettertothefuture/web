@@ -12,10 +12,8 @@ export const Signature: FC<SignatureProps> = (props) => {
       ref={divRef}
       className={styles.container}
     >
-      <h6 className={styles.title}>Assinado:</h6>
-      <small className={styles.information}>
-        Use o mouse ou toque para desenhar
-      </small>
+      <h6 className={styles.title}>Best regards:</h6>
+      <small className={styles.information}>Use the mouse to draw</small>
       <canvas
         ref={canvasRef}
         className={styles.pad}
@@ -26,7 +24,7 @@ export const Signature: FC<SignatureProps> = (props) => {
         className={styles.clear}
         onClick={clear}
       >
-        Limpar
+        Clear
       </button>
     </div>
   );

@@ -6,7 +6,7 @@ import { useSendLetter } from './hooks/use-send-letter';
 export const useApp = () => {
   const { execute, isLoading, isError, error, isSuccess } = useSendLetter();
   const [title, onTitleChange] = useState(
-    'Oi eu do futuro ... só queria dizer que ... ',
+    'Hello my future self, I would like to say ...',
   );
   const [letter, onLetterChange] = useState('.............');
   const [date, onDateChange] = useState(addDays(new Date(), 1));
