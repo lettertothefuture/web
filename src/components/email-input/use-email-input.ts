@@ -14,7 +14,7 @@ export const useEmailInput = (props: EmailInputProps) => {
       if (
         /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(str) === false
       ) {
-        setError('Informe um email válido!!!');
+        setError('Invalid email!!!');
       } else {
         setError(undefined);
       }
