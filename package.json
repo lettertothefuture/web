@@ -1,6 +1,7 @@
 {
   "name": "web",
   "private": true,
+  "homepage": "https://lettertothefuture.github.io/web/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -12,6 +13,7 @@
     "unit:check": "vitest run --config vite.config.test.ts",
     "commit-message": "validate-commit-msg",
     "start": "vite",
+    "predeploy": "pnpm run build",
     "deploy": "gh-pages -d build"
   },
   "lint-staged": {
